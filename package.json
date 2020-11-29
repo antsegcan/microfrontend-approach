@@ -1,6 +1,6 @@
 {
-  "name": "pocs",
-  "version": "0.1.0",
+  "name": "mfe-approach",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
@@ -17,10 +17,10 @@
   },
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "run-s build:*",
-    "build:package": "parcel build --no-content-hash src/react-wrapper.js --no-source-maps",
-    "build:server": "serve -l 5000 dist",
-    "build:client": "serve -l 5001 client.html"
+    "serve": "run-s serve:*",
+    "serve:package": "parcel build --no-content-hash src/react-wrapper.js --no-source-maps",
+    "serve:server": "serve -l 5000 dist",
+    "client": "serve -l 5001 client.html"
   },
   "eslintConfig": {
     "extends": [
